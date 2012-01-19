@@ -44,7 +44,7 @@ package {
     }
 
     private function onURLButtonClick(e:MouseEvent):void{
-      navigateToURL(new URLRequest("http://homepage1.nifty.com/kaityo/top.html"),"_blank");
+      navigateToURL(new URLRequest("https://sites.google.com/site/kaityoapocalypse/"),"_blank");
     }
 
     public function show():void{
