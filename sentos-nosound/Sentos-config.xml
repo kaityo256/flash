@@ -1,0 +1,26 @@
+<flex-config>
+
+<output>Sentos.swf</output>
+
+<default-size>
+  <width>320</width>
+  <height>320</height>
+</default-size>
+
+<default-background-color>0x000000</default-background-color>
+<default-frame-rate>24</default-frame-rate>
+<use-network>false</use-network>
+<benchmark>true</benchmark>
+
+<compiler>
+ <incremental>true</incremental>
+</compiler>
+
+<metadata>
+ <title>Sentos</title>
+ <description></description>
+ <publisher></publisher>
+ <creator>Kaityo</creator>
+</metadata>
+
+</flex-config>

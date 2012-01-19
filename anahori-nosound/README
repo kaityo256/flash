@@ -1,0 +1,13 @@
+------------------------------------------------------------------------
+Flash Puzzle Game Source Code (without sounds)
+------------------------------------------------------------------------
+How to build
+
+$ make
+
+# Flex SDK 3.0 or later is necessary.
+------------------------------------------------------------------------
+You can play this game at
+
+https://sites.google.com/site/kaityoapocalypse/flash/anahori
+

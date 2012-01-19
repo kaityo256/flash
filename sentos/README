@@ -1,0 +1,29 @@
+------------------------------------------------------------------------
+Flash One-Key Game Source Code
+------------------------------------------------------------------------
+
+How to build
+
+$ make
+
+Flex SDK 3.0 or later is necessary.
+Please prepare the following mp3 files.
+
+bgm01.mp3   Title BGM
+bgm02.mp3   Stage BGM1
+bgm03.mp3   Ranking BGM
+bgm04.mp3   Stage BGM2
+sound01.mp3 Sound (Miss)
+sound02.mp3 Sound (Bonus)
+sound03.mp3 Sound (Passing gates)
+sound04.mp3 Sound (Cursor)
+sound05.mp3 Sound (Clear)
+
+If you do not want to prepare the above files,
+please try sentos-nosound project.
+------------------------------------------------------------------------
+You can play this game at
+
+https://sites.google.com/site/kaityoapocalypse/flash/sentos
+------------------------------------------------------------------------
+

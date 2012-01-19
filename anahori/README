@@ -1,0 +1,28 @@
+------------------------------------------------------------------------
+Flash Puzzle Game Source Code
+------------------------------------------------------------------------
+
+How to build
+
+$ make
+
+Flex SDK 3.0 or later is necessary.
+Please prepare the following mp3 files.
+
+bgm01.mp3   Stage BGM1
+bgm02.mp3   Stage BGM2
+bgm03.mp3   Stage BGM3
+bgm04.mp3   BGM for Ending
+sound01.mp3 Sound (Falling Stone)
+sound02.mp3 Sound (Digging)
+sound03.mp3 Sound (Stage Clear)
+sound04.mp3 Sound (Falling Player)
+
+If you do not want to prepare the above files,
+please try anahori-nosound project.
+------------------------------------------------------------------------
+You can play this game at
+
+https://sites.google.com/site/kaityoapocalypse/flash/anahori
+------------------------------------------------------------------------
+

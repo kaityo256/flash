@@ -1,0 +1,29 @@
+<flex-config>
+
+<output>Anahori2.swf</output>
+
+<default-size>
+  <width>320</width>
+  <height>320</height>
+</default-size>
+
+<default-background-color>0xFFFFFF</default-background-color>
+
+
+<use-network>false</use-network>
+<benchmark>true</benchmark>
+
+<compiler>
+ <incremental>true</incremental>
+</compiler>
+
+<metadata>
+ <title>Anahori2</title>
+ <description></description>
+ <publisher></publisher>
+ <creator>Kaityo</creator>
+ <language>ja-JP</language>
+</metadata>
+
+
+</flex-config>
