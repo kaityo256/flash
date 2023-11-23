@@ -1,0 +1,86 @@
+<html>
+<title>線通</title>
+<style type="text/css">
+    p {
+        padding-left: 1em;
+    }
+
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+
+    p.caption {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .markdown-body {
+            padding: 15px;
+        }
+    }
+</style>
+<link rel="stylesheet" href="https://kaityo256.github.io/python_zero/github-markdown.css" type="text/css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <H1>線通</H1>
+    <article class="markdown-body">
+        <div id="flash_area" style="text-align: center;"></div>
+
+        <H2>遊び方</H2>
+
+        <div>まぁやればわかりますけど。</div>
+
+
+        <H3>目的</H3>
+        赤い線を操って水色の線をくぐり抜け、ゴールにたどり着くのだ！
+
+        <H3>ルール</H3>
+
+        <ul>
+            <li> 赤い線が自機です。何もしないでいると重力で下がっていきます。</li>
+            <li> マウスもしくはスペースキーを押している間だけ上向きに加速度が発生します。</li>
+            <li> 自機(赤い線)が水色の線に触れるとミスです。</li>
+            <li>黄色い線は「ボーナスゾーン」で、触れてもミスになりません。 連続で触れ続けることでCOMBOとなり、高得点につながります。</li>
+            <li>基本は1ドット進むごとに1点、穴をくぐれば100点。</li>
+            <li>0 COMBO に対して、1 COMBOは得点の上がり方が2倍、2 COMBOは4倍と 倍々に増えていきます(ただし上限有り)。</li>
+            <li> 30個の穴をくぐり抜けると「クリア」です。最大COMBO数に応じて ボーナス点が与えられます。</li>
+        </ul>
+
+        <H3>謝辞</H3>
+
+        <ul>
+            <li>BGM提供:propan mode様</li>
+            <li>効果音提供:ザ・マッチメイカァズ2nd様</li>
+        </ul>
+
+        <h3>その他</h3>
+
+        <P>仕様というか不具合というか</P>
+
+        <P>一度ベクタで書いた線をラスタライズしているので、当たり判定が微妙に(1ドット)ずれることがあります。 「ちゃんと黄色い線触ったのにコンボ判定されなかった！」なんてことが起きますが、その辺は心眼で見極めてください。
+            2ドットずれることはないので、理不尽な死に方はしないはずです。</P>
+
+
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("flash_area");//場所のid
+                container.appendChild(player);
+                player.load("swf/Sentos.swf");//swfへのパス
+            });
+            player.style.width = "600px";//サイズ
+            player.style.height = "400px";;
+        </script>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    </article>
+</body>
+
+</html>

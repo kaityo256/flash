@@ -1,0 +1,97 @@
+<html>
+<title>穴掘りWars 2</title>
+<style type="text/css">
+    p {
+        padding-left: 1em;
+    }
+
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+
+    p.caption {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .markdown-body {
+            padding: 15px;
+        }
+    }
+</style>
+<link rel="stylesheet" href="https://kaityo256.github.io/python_zero/github-markdown.css" type="text/css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <article class="markdown-body">
+        <H1 style="text-align: center;">穴掘りWars 2</H1>
+        <div id="flash_area" style="text-align: center;"></div>
+
+        <H2>遊び方</H2>
+
+        <div>まぁやればわかりますけど。</div>
+
+
+        <H2>目的</H2>
+        君はよしおとなり、穴を掘り、梯子を上り、石を乗り越え <strong style="color: red">愛</strong>を獲得するのだ！
+
+        <H2>キャラクター</H2>
+        <H3>よしお</H3>
+        <img src="img/yoshio.png">
+        <P>主人公です。目から怪光線を出して土を溶かすことができます。 <strong style="color: red">愛</strong>に飢えていおり、いつも<strong
+                style="color: red">愛</strong>を探しています。</P>
+        <H3>土</H3>
+        <img src="img/tuti.png">
+        <P>土です。怪光線で溶かすことができます。</P>
+        <H3>はしご</H3>
+        <img src="img/hashigo.png">
+        <P>頑丈なハシゴです。登ることができます。ハシゴの上に石があってもびくともしません。ハシゴの真下を掘ると梯子が落ちてきます。 ハシゴは押せません。</P>
+        <H3>石</H3>
+        <P>重い石です。つねに土かハシゴに支えられている状態になっています。 石の下に空白ができると地滑りをおこして落ちてきます。 重いので一度に一つしか押せません。</P>
+        <H3>愛</H3>
+        <P><strong style="color: red">愛</strong>です。<strong style="color: red">愛</strong>にたどり着けばクリアです。</P>
+        <H3>操作</H3>
+        <ul>
+            <li>移動：カーソルキー</li>
+            <li>何も無いところか、梯子は移動可能ですが、土や石の方向へは進めません。</li>
+            <li>また、１マスなら落下できますが、２マス以上落下すると死んでしまいます。</li>
+            <li>石は一つだけなら真横に押すことができます。ハシゴは押せません。</li>
+            <li>穴を掘る：スペースキー</li>
+            <li>主人公は向いている方向に怪光線を発射し、土を掘ることができます。</li>
+            <li>土を掘った時、掘った土の上の方に石があると、地滑りをおこします。</li>
+            <li>梯子の下を掘ると梯子は落下します。ただし、梯子と穴の間に土があれば梯子は落下しません。</li>
+            <li>やりなおし：エスケープキー</li>
+            <li>ゲーム中いつでも「エスケープキー」を押せばそのステージをやり直すことができます。 また、死んだときにもスペースキーかエスケープキーを押せばそのステージをやり直せます。</li>
+            <li>コンテニュー：ありません</li>
+            <li>「コンテニュー」とか「続きから」が欲しいとか言ってる人には<strong style="color: red">愛</strong>なんて獲得できんのです。 えらい人にはそれがわからんのです。</li>
+            <li>死亡回数制限、時間制限などはありません。ゆっくり何度でも挑戦してください。</li>
+        </ul>
+        <H3>謝辞</H3>
+
+        <ul>
+            <li>BGM提供:propan mode様</li>
+            <li>効果音提供:ザ・マッチメイカァズ2nd様</li>
+        </ul>
+
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("flash_area");//場所のid
+                container.appendChild(player);
+                player.load("swf/Anahori2.swf");//swfへのパス
+            });
+            player.style.width = "600px";//サイズ
+            player.style.height = "400px";;
+        </script>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    </article>
+</body>
+
+</html>
