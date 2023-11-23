@@ -9,6 +9,10 @@
 
 穴を掘って石を押してはしごを登って愛を獲得するゲーム。
 
+プレイ画面。
+
+![gif](docs/img/anahori2.gif)
+
 ## 線通
 
 [![線通](docs/img/sentos-title.png)](https://kaityo256.github.io/flash/sentos.html)
@@ -16,6 +20,10 @@
 [https://kaityo256.github.io/flash/sentos.html](https://kaityo256.github.io/flash/sentos.html)
 
 線を通すゲーム。
+
+プレイ画面。
+
+![gif](docs/img/sentos.gif)
 
 ## ライセンス
 
